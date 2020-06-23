@@ -1,6 +1,7 @@
 <template>
   <div>
-    <h3>Tasks Todo</h3>
+    <h3>Tasks</h3>
+    <br/>
     <div class="legend">
       <span>Double click to mark as complete</span>
       <span>
@@ -58,7 +59,7 @@ export default {
 
 .todo {
   border: 1px solid #ccc;
-  background: #036df8;
+  background: #0396f8;
   padding: 1rem;
   border-radius: 5px;
   text-align: center;
@@ -84,18 +85,18 @@ i {
   display: inline-block;
   width: 10px;
   height: 10px;
-  background: #35495e;
+  background: #a8c5e4;
 }
 
 .incomplete-box {
   display: inline-block;
   width: 10px;
   height: 10px;
-  background: #036df8;
+  background: #0396f8;
 }
 
 .is-complete {
-  background: #35495e;
+  background: #a8c5e4;
   color: #fff;
 }
 
@@ -103,5 +104,8 @@ i {
   .todos {
     grid-template-columns: 1fr;
   }
+}
+h3{
+  margin-top: 15px;
 }
 </style>

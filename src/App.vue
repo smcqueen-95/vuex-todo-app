@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <div class="container">
+      <Sidebar />
       <AddTodo/>
       <FilterTodos/>
       <Todos/>
@@ -12,16 +13,19 @@
 import Todos from "./components/Todos.vue";
 import AddTodo from "./components/AddTodo.vue";
 import FilterTodos from "./components/FilterTodos.vue";
+import Sidebar from './components/Sidebar';
 
 export default {
   name: "app",
   components: {
+    Sidebar,
     Todos,
     AddTodo,
     FilterTodos
   }
 };
 </script>
+
 
 <style>
 body {
